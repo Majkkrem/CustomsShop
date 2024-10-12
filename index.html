@@ -1,179 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customs Shop</title>
 </head>
-
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Customs Shop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Customs Shop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
     </header>
     <main>
-        <table class="container">
-            <tr class="row">
-                <td class="col-12">
-                    <h1 class="text-center">Customs shop</h1>
-                </td>
-            </tr>
-            <tr class="row">
-                <td class="col-12">
-                    <h2 class="text-center">Customize to your needs!</h2>
-                </td>
-            </tr>
-            <!--Images-->
-            <tr class="row">
-                <td class="col-8">
-                    <div class="card">
-                        <img src="szurke/auto oldalak/szurke.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <button type="button" id="changeCarLeftButton" class="arrow left"></button>
-                            <button type="button" id="changeCarRightButton" class="arrow right"></button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="szurke/kerekek/szurke_22_1_side.png" class="card-img" alt="...">
-                        <div class="card-body">
-                            <button type="button" id="changeTireLeftButton" class="arrow left"></button>
-                            <button type="button" id="changeTireRightButton" class="arrow right"></button>
-                        </div>
-                    </div>
-                </td>
+      <table class="container">
+        <tr class="row">
+          <td class="col-12">
+            <h1 class="text-center">Customs shop</h1>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-12">
+            <h2 class="text-center">Customize to your needs!</h2>
+          </td>
+        </tr>
+        <!--Images-->
+        <tr class="row">
+          <td class="col-8">
+            <div class="card">
+              <img src="szurke/auto oldalak/szurke.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <button type="button" id="changeCarLeftButton" class="arrow left"></button>
+                  <button type="button" id="changeCarRightButton" class="arrow right"></button>
+                </div>
+            </div>
+            <div class="card">
+              <img src="szurke/kerekek/szurke_22_1_side.png" class="card-img" alt="...">
+              <div class="card-body">
+                <button type="button" id="changeTireLeftButton" class="arrow left"></button>
+                <button type="button" id="changeTireRightButton" class="arrow right"></button>
+              </div>
+            </div>
+          </td>
 
-                <!--Buttons-->
-                <td class="col-4">
-                    <div class="card">
-                        <h3>Exterior Color</h3>
-                        <div>
-                            <button type="button" class="btn rounded-circle" id="exteriorGrey"><img src="szinek_gomb/szurke_gomb.webp"
-                                    alt="fekete"></button><br>
-                            <button type="button" class="btn rounded-circle" id="exteriorBlack"><img src="szinek_gomb/fekete_gomb.webp"
-                                    alt=""></button>
-                            <button type="button" class="btn rounded-circle" id="exteriorBlue"><img src="szinek_gomb/kek_gomb.webp"
-                                    alt=""> </button>
+          <!--Buttons-->
+          <td class="col-4">
+            <div class="card">
+              <h3>Exterior Color</h3>
+                <div>
+                  <button type="button" class="btn rounded-circle" id="exteriorGrey"><img src="szinek_gomb/szurke_gomb.webp"
+                          alt="fekete"></button><br>
+                  <button type="button" class="btn rounded-circle" id="exteriorBlack"><img src="szinek_gomb/fekete_gomb.webp"
+                          alt=""></button>
+                  <button type="button" class="btn rounded-circle" id="exteriorBlue"><img src="szinek_gomb/kek_gomb.webp"
+                          alt=""> </button>
 
-                            <button type="button" class="btn rounded-circle" id="exteriorRed"><img src="szinek_gomb/piros_gomb.webp"
-                                    alt=""></button><br>
-                            <!-- Ezt nem tudom miért nem mutatja az oldalon, megnéznétek?
+                  <button type="button" class="btn rounded-circle" id="exteriorRed"><img src="szinek_gomb/piros_gomb.webp"
+                          alt=""></button><br>
                                     
-                            <div>
-                                <p><i>+2100$</i></p>
-                            </div>
-                                <div>
-                            
-                                <p><i> +2100$</i></p>
-
-                            </div> -->
-
-                        </div>
-                    </div>
-                    <br>
-                    <div class="card">
-                        <h3>Wheels</h3>
-                        <div>
-                            <button type="button" class="btn rounded-circle" id="tire21"><img src="kerekek/21'  kerek.png"
-                                    alt=""></button><br>
-                            <button type="button" class="btn rounded-circle" id="tier22_1"><img src="kerekek/22' kerek1.png"
-                                    alt=""></button>
-                            <button type="button" class="btn rounded-circle" id="tire22_2"><img src="kerekek/22' kerek2.png"
-                                    alt=""></button>
-                            <button type="button" class="btn rounded-circle" id="tire22_3"><img src="kerekek/22' kerek3.png"
-                                    alt=""></button>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="card">
-                        <h3>Interior Color</h3>
-                        <button type="button" class="btn rounded-circle" id="interiorBlack"><img src="szinek_gomb/fekete_gomb.webp"
-                                alt=""></button>
-                        <button type="button" class="btn rounded-circle" id="interiorGrey"><img src="szinek_gomb/szurke_gomb.webp"
-                                alt=""></button>
-                    </div>
-                    <br>
-                    <div class="card">
-                        <h3>Sport Seats</h3>
-                        <div class="checkbox-wrapper-19">
-                            <input type="checkbox" id="cbtest-19" />
-                            <label for="cbtest-19" class="check-box">
-                        </div>
-                        <h4><i>+1500$</i></h4>
-                    </div>
-                    <br>
-                    <div class="card">
-                        <h3>Engine Type</h3>
-                        <h4>V8</h4>
-                        <div class="checkbox-wrapper-19">
-                            <input type="checkbox" id="cbtest-19_1" />
-                            <label for="cbtest-19_1" class="check-box">
-                        </div>
-                        <h4><i>+3200$</i></h4>
-                        <div class="checkbox-wrapper-19">
-                            <h4>V12</h4>
-                            <input type="checkbox" id="cbtest-19_2" />
-                            <label for="cbtest-19_2" class="check-box">
-                        </div>
-                        <h4><i>+4000$</i></h4>
-                    </div>
-                    <br>
-                    <div class="card">
-                        <h3>Gearbox</h3>
-                        <h4>Automatic</h4>
-                        <div class="checkbox-wrapper-19">
-                            <input type="checkbox" id="cbtest-19_3" />
-                            <label for="cbtest-19_3" class="check-box">
-                        </div>
-                        <h4><i>FREE</i></h4>
-                        <div class="checkbox-wrapper-19">
-                            <h4>Manual</h4>
-                            <input type="checkbox" id="cbtest-19_4" />
-                            <label for="cbtest-19_4" class="check-box">
-                        </div>
-                        <h4><i>+1000$</i></h4>
-                        <!--A pozik nem tudom miért szarok, arra rátudtok majd nézni?-->
-                    </div>
-                    <br>
-                    <div class="card">
-                        <h3>Windows</h3>
-                        <h4>Tinted</h4>
-                        <div class="checkbox-wrapper-19">
-                            <input type="checkbox" id="cbtest-19_5" />
-                            <label for="cbtest-19_5" class="check-box">
-                        </div>
-                        <h4><i>+600$</i></h4>
-                    </div>
-                    <br>
-                </td>
-            </tr>
-        </table>
-        <br>
-        <footer>
-            <h2 id="title">2025 AUDI Avant RS6
-                performance</h2>
-            <h5 id="totalPrice"> Total: </h5>
-
-        </footer>
-
-
-
-
-
-
-</body>
-
+                  <!--<div>
+                    <p><i>+2100$</i></p>
+                  </div>
+                  <div>
+                    <p><i> +2100$</i></p>
+                  </div>-->
+                </div>
+            </div>
+            <br>
+            <div class="card">
+              <h3>Wheels</h3>
+                <div>
+                  <button type="button" class="btn rounded-circle" id="tire21"><img src="kerekek/21'  kerek.png"
+                          alt=""></button><br>
+                  <button type="button" class="btn rounded-circle" id="tier22_1"><img src="kerekek/22' kerek1.png"
+                          alt=""></button>
+                  <button type="button" class="btn rounded-circle" id="tire22_2"><img src="kerekek/22' kerek2.png"
+                          alt=""></button>
+                  <button type="button" class="btn rounded-circle" id="tire22_3"><img src="kerekek/22' kerek3.png"
+                          alt=""></button>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+              <h3>Interior Color</h3>
+                <button type="button" class="btn rounded-circle" id="interiorBlack"><img src="szinek_gomb/fekete_gomb.webp"
+                        alt=""></button>
+                <button type="button" class="btn rounded-circle" id="interiorGrey"><img src="szinek_gomb/szurke_gomb.webp"
+                        alt=""></button>
+            </div>
+            <br>
+            <div class="card">
+              <h3>Sport Seats</h3>
+              <div class="checkbox-wrapper-19">
+                <input type="checkbox" id="cbtest-19" />
+                <label for="cbtest-19" class="check-box">
+              </div>
+              <h4><i>+1500$</i></h4>
+            </div>
+            <br>
+            <div class="card">
+              <h3>Engine Type</h3>
+              <h4>V8</h4>
+              <div class="checkbox-wrapper-19">
+                <input type="checkbox" id="cbtest-19_1" />
+                <label for="cbtest-19_1" class="check-box">
+              </div>
+              <h4><i>+3200$</i></h4>
+              <div class="checkbox-wrapper-19">
+                <h4>V12</h4>
+                <input type="checkbox" id="cbtest-19_2" />
+                <label for="cbtest-19_2" class="check-box">
+              </div>
+              <h4><i>+4000$</i></h4>
+            </div>
+            <br>
+            <div class="card">
+              <h3>Gearbox</h3>
+              <h4>Automatic</h4>
+              <div class="checkbox-wrapper-19">
+                <input type="checkbox" id="cbtest-19_3" />
+                <label for="cbtest-19_3" class="check-box">
+              </div>
+              <h4><i>FREE</i></h4>
+              <div class="checkbox-wrapper-19">
+                <h4>Manual</h4>
+                <input type="checkbox" id="cbtest-19_4" />
+                <label for="cbtest-19_4" class="check-box">
+              </div>
+                <h4><i>+1000$</i></h4>
+                <!--A pozik nem tudom miért szarok, arra rátudtok majd nézni?-->
+            </div>
+            <br>
+            <div class="card">
+              <h3>Windows</h3>
+              <h4>Tinted</h4>
+              <div class="checkbox-wrapper-19">
+                <input type="checkbox" id="cbtest-19_5" />
+                <label for="cbtest-19_5" class="check-box">
+              </div>
+              <h4><i>+600$</i></h4>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <footer>
+        <h2 id="title">2025 AUDI Avant RS6 performance</h2>
+        <h5 id="totalPrice"> Total: </h5>
+      </footer>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
