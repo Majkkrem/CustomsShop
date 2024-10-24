@@ -72,7 +72,14 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentTireIndex = 0;
   let currentTireImageIndex = 0;
 
-  let totalPrice = 0;
+  const checkoutButton = document.getElementById("checkoutButton").addEventListener("click", function () {
+    alert("Thank you for your purchase!");
+    setTimeout(function(){
+      location.reload();
+     },3000);
+  });
+
+  let totalPrice = 126600;
 
   const carImage = document.querySelector(".card-img-top");
   const tireImage = document.querySelector(".tire-img");
@@ -83,12 +90,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   document.getElementById("exteriorBlack").addEventListener("click", function () {
     changeCarColor(1);
+    if (button.classList.contains("active")) {
+      totalPrice += 1000;}
+      else{
+        totalPrice -= 1000;
+      }
+      updateTotalPrice();
   });
   document.getElementById("exteriorBlue").addEventListener("click", function () {
     changeCarColor(2);
+    if (button.classList.contains("active")) {
+      totalPrice += 1200;}
+      else{
+        totalPrice -= 1200;
+      }
+      updateTotalPrice();
   });
   document.getElementById("exteriorRed").addEventListener("click", function () {
     changeCarColor(3);
+    if (button.classList.contains("active")) {
+      totalPrice += 1200;}
+      else{
+        totalPrice -= 1200;
+      }
+      updateTotalPrice();
   });
 
   // Kerék változtatás
@@ -97,12 +122,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   document.getElementById("tire22_1").addEventListener("click", function () {
     changeTire(1);
+    if (button.classList.contains("active")) {
+      totalPrice += 500;}
+      else{
+        totalPrice -= 500;
+      }
+      updateTotalPrice();
   });
   document.getElementById("tire22_2").addEventListener("click", function () {
     changeTire(2);
+    totalPrice += 500;
   });
   document.getElementById("tire22_3").addEventListener("click", function () {
     changeTire(3);
+    totalPrice += 500;
   });
 
   document.getElementById("changeCarLeftButton").addEventListener("click", function () {
