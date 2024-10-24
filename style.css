@@ -1,3 +1,43 @@
+/* Egyedi alert ablak stílus */
+.custom-alert {
+  display: none; /* Kezdetben elrejtve */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #000;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 8px;
+  text-align: center;
+}
+.custom-alert p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+.custom-alert button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Checkout gomb stílus */
+#checkoutButton {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .btn.rounded-circle {
   border: none;
   padding: 1px;
@@ -10,10 +50,6 @@
   display: inline-block;
   position: relative;
   transition: box-shadow 0.3s ease; 
-}
-
-#checkoutButton {
-  margin-left: 700px;
 }
 
 .btn.rounded-circle img {

@@ -72,12 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentTireIndex = 0;
   let currentTireImageIndex = 0;
 
-  const checkoutButton = document.getElementById("checkoutButton").addEventListener("click", function () {
-    alert("Thank you for your purchase!");
-    setTimeout(function(){
-      location.reload();
-     },3000);
-  });
+   // Checkout gombra kattintáskor megjelenik az üzenet
+document.getElementById('checkoutButton').addEventListener('click', function() {
+  document.getElementById('alertBox').style.display = 'block';
+});
+
+// OK gombra kattintáskor az alert eltűnik
+document.getElementById('closeButton').addEventListener('click', function() {
+  document.getElementById('alertBox').style.display = 'none';
+  location.reload();
+});
 
   let totalPrice = 126600;
 
